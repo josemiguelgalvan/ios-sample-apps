@@ -8,8 +8,8 @@
 #import "SecurePlayerPlayerViewController.h"
 #import "SampleAppPlayerViewController.h"
 #import "SecurePlayerOPTPlayerViewController.h"
-
 #import "SecurePlayerSelectionOption.h"
+#import "SecurePlayerPrePersonalizedPlayerViewController.h"
 
 @interface SecurePlayerListViewController ()
 @property NSMutableArray *options;
@@ -73,7 +73,12 @@
                                                                       pcode:@"N5dGEyOrMsKgdLgNp2B0wirtpqm7"
                                                                      domain:@"http://www.ooyala.com"
                                                              viewController:[SecurePlayerPlayerViewController class]]];
-  [self insertNewObject: [[SecurePlayerSelectionOption alloc] initWithTitle:@""
+  [self insertNewObject:[[SecurePlayerSelectionOption alloc] initWithTitle:@"Pre-Personalize"
+                                                           embedCode:@"5jNzJuazpFtKmloYZQmgPeC_tqDKHX9r"
+                                                               pcode:@"FoeG863GnBL4IhhlFC1Q2jqbkH9m"
+                                                              domain:@"http://www.ooyala.com"
+                                                      viewController:[SecurePlayerPrePersonalizedPlayerViewController class]]];
+  [self insertNewObject: [[SecurePlayerSelectionOption alloc] initWithTitle:@"Scan code"
                                                                   embedCode:@""
                                                                       pcode:@""
                                                                      domain:@"http://www.ooyala.com"
