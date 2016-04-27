@@ -1,7 +1,9 @@
+source 'https://github.com/ooyala/ios-sdk-podspecs.git'
+
 # Uncomment this line to define a global platform for your project
 platform :tvos, '9.0'
 
 target 'CocoaPodsTVSampleApp' do
-	pod 'OoyalaSDK', :git => 'https://github.com/ooyala/ios-sdk-podspecs.git', :branch => ''
+	pod 'OoyalaSDK', :podspec => 'https://raw.githubusercontent.com/ooyala/ios-sdk-podspecs/tvospod/OoyalaSDK/1.2.4/OoyalaSDK.podspec'
 end
 

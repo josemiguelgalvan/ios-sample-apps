@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <OoyalaTVSDK/OOOoyalaTVPlayerViewController.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : OOOoyalaTVPlayerViewController
 
 
 @end
