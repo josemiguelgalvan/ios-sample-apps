@@ -1,0 +1,297 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CAF5801E1CD136B1005EB668 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CAF5801D1CD136B1005EB668 /* main.m */; };
+		CAF580211CD136B1005EB668 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CAF580201CD136B1005EB668 /* AppDelegate.m */; };
+		CAF580241CD136B1005EB668 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CAF580231CD136B1005EB668 /* ViewController.m */; };
+		CAF580271CD136B1005EB668 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAF580251CD136B1005EB668 /* Main.storyboard */; };
+		CAF580291CD136B1005EB668 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAF580281CD136B1005EB668 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CAF580191CD136B0005EB668 /* CocoaPodsTVSampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CocoaPodsTVSampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CAF5801D1CD136B1005EB668 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CAF5801F1CD136B1005EB668 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CAF580201CD136B1005EB668 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CAF580221CD136B1005EB668 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		CAF580231CD136B1005EB668 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		CAF580261CD136B1005EB668 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CAF580281CD136B1005EB668 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CAF5802A1CD136B1005EB668 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CAF580161CD136B0005EB668 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CAF580101CD136B0005EB668 = {
+			isa = PBXGroup;
+			children = (
+				CAF5801B1CD136B1005EB668 /* CocoaPodsTVSampleApp */,
+				CAF5801A1CD136B0005EB668 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CAF5801A1CD136B0005EB668 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CAF580191CD136B0005EB668 /* CocoaPodsTVSampleApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CAF5801B1CD136B1005EB668 /* CocoaPodsTVSampleApp */ = {
+			isa = PBXGroup;
+			children = (
+				CAF5801F1CD136B1005EB668 /* AppDelegate.h */,
+				CAF580201CD136B1005EB668 /* AppDelegate.m */,
+				CAF580221CD136B1005EB668 /* ViewController.h */,
+				CAF580231CD136B1005EB668 /* ViewController.m */,
+				CAF580251CD136B1005EB668 /* Main.storyboard */,
+				CAF580281CD136B1005EB668 /* Assets.xcassets */,
+				CAF5802A1CD136B1005EB668 /* Info.plist */,
+				CAF5801C1CD136B1005EB668 /* Supporting Files */,
+			);
+			path = CocoaPodsTVSampleApp;
+			sourceTree = "<group>";
+		};
+		CAF5801C1CD136B1005EB668 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CAF5801D1CD136B1005EB668 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CAF580181CD136B0005EB668 /* CocoaPodsTVSampleApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CAF5802D1CD136B1005EB668 /* Build configuration list for PBXNativeTarget "CocoaPodsTVSampleApp" */;
+			buildPhases = (
+				CAF580151CD136B0005EB668 /* Sources */,
+				CAF580161CD136B0005EB668 /* Frameworks */,
+				CAF580171CD136B0005EB668 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CocoaPodsTVSampleApp;
+			productName = CocoaPodsTVSampleApp;
+			productReference = CAF580191CD136B0005EB668 /* CocoaPodsTVSampleApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CAF580111CD136B0005EB668 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Ooyala;
+				TargetAttributes = {
+					CAF580181CD136B0005EB668 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = CAF580141CD136B0005EB668 /* Build configuration list for PBXProject "CocoaPodsTVSampleApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CAF580101CD136B0005EB668;
+			productRefGroup = CAF5801A1CD136B0005EB668 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CAF580181CD136B0005EB668 /* CocoaPodsTVSampleApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CAF580171CD136B0005EB668 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAF580291CD136B1005EB668 /* Assets.xcassets in Resources */,
+				CAF580271CD136B1005EB668 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CAF580151CD136B0005EB668 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAF580241CD136B1005EB668 /* ViewController.m in Sources */,
+				CAF580211CD136B1005EB668 /* AppDelegate.m in Sources */,
+				CAF5801E1CD136B1005EB668 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CAF580251CD136B1005EB668 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CAF580261CD136B1005EB668 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CAF5802B1CD136B1005EB668 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.2;
+			};
+			name = Debug;
+		};
+		CAF5802C1CD136B1005EB668 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CAF5802E1CD136B1005EB668 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = CocoaPodsTVSampleApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ooyala.CocoaPodsTVSampleApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CAF5802F1CD136B1005EB668 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = CocoaPodsTVSampleApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ooyala.CocoaPodsTVSampleApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CAF580141CD136B0005EB668 /* Build configuration list for PBXProject "CocoaPodsTVSampleApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CAF5802B1CD136B1005EB668 /* Debug */,
+				CAF5802C1CD136B1005EB668 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CAF5802D1CD136B1005EB668 /* Build configuration list for PBXNativeTarget "CocoaPodsTVSampleApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CAF5802E1CD136B1005EB668 /* Debug */,
+				CAF5802F1CD136B1005EB668 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CAF580111CD136B0005EB668 /* Project object */;
+}

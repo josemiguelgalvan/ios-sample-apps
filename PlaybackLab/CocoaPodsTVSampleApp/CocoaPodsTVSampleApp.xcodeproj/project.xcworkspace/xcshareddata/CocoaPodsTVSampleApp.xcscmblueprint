@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "56259557E7CDC2A1C6794E8BF2EBA8C6812FA57A",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "7C44C29CBB3CFFFAC1C439A59BC8B6D686640374" : 0,
+    "56259557E7CDC2A1C6794E8BF2EBA8C6812FA57A" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "D7E48811-E0E6-41D6-9716-C6CA4EC85AB2",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "7C44C29CBB3CFFFAC1C439A59BC8B6D686640374" : "",
+    "56259557E7CDC2A1C6794E8BF2EBA8C6812FA57A" : "ios-sample-apps\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "CocoaPodsTVSampleApp",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "PlaybackLab\/CocoaPodsTVSampleApp\/CocoaPodsTVSampleApp.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:ooyala\/ios-sample-apps.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "56259557E7CDC2A1C6794E8BF2EBA8C6812FA57A"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "ssh:\/\/git.corp.ooyala.com:7999\/pba\/ios-complete.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "7C44C29CBB3CFFFAC1C439A59BC8B6D686640374"
+    }
+  ]
+}
