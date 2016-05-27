@@ -11,6 +11,8 @@
 #import <OoyalaSDK/OOOoyalaPlayerViewController.h>
 #import <OoyalaSDK/OOOoyalaPlayer.h>
 #import <OoyalaSDK/OOPlayerDomain.h>
+#import <OoyalaSDK/OOStreamPlayer.h>
+#import <OoyalaSDK/OODefaultPlayerInfo.h>
 
 @interface BasicSimplePlayerViewController ()
 @property (strong, nonatomic) OOOoyalaPlayerViewController *ooyalaPlayerViewController;
@@ -19,6 +21,17 @@
 @property NSString *nib;
 @property NSString *pcode;
 @property NSString *playerDomain;
+@end
+
+@interface MP4OnlyPlayerInfo : OODefaultPlayerInfo
+@end
+
+@implementation MP4OnlyPlayerInfo
+
+- (NSArray *)supportedFormats {
+  return @[@"mp4"];
+}
+
 @end
 
 @implementation BasicSimplePlayerViewController
@@ -48,6 +61,8 @@
 - (void)viewDidLoad {
   [super viewDidLoad];
 
+
+  [OOStreamPlayer setDefaultPlayerInfo:[MP4OnlyPlayerInfo new]];
   // Create Ooyala ViewController
   OOOoyalaPlayer *player = [[OOOoyalaPlayer alloc] initWithPcode:self.pcode domain:[[OOPlayerDomain alloc] initWithString:self.playerDomain]];
   self.ooyalaPlayerViewController = [[OOOoyalaPlayerViewController alloc] initWithPlayer:player];
