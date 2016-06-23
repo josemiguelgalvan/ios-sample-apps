@@ -51,6 +51,7 @@ NSMutableArray *_sharePlugins;
 - (void)viewDidLoad {
   [super viewDidLoad];
   OOOptions *options = [OOOptions new];
+  options.pipDelegate = self;
   OOOoyalaPlayer *ooyalaPlayer = [[OOOoyalaPlayer alloc] initWithPcode:self.pcode domain:[[OOPlayerDomain alloc] initWithString:self.playerDomain] options:options];
   OODiscoveryOptions *discoveryOptions = [[OODiscoveryOptions alloc] initWithType:OODiscoveryTypePopular limit:10 timeout:60];
   NSURL *jsCodeLocation = [[NSBundle mainBundle] URLForResource:@"main" withExtension:@"jsbundle"];
@@ -78,5 +79,22 @@ NSMutableArray *_sharePlugins;
     // Pass the selected object to the new view controller.
 }
 */
+
+#pragma mark AVPictureInPictureControllerDelegate
+- (void)pictureInPictureControllerWillStartPictureInPicture:(AVPictureInPictureController *)pictureInPictureController {
+  NSLog(@"pictureInPictureControllerWillStartPictureInPicture");
+}
+
+- (void)pictureInPictureControllerDidStartPictureInPicture:(AVPictureInPictureController *)pictureInPictureController {
+  NSLog(@"pictureInPictureControllerDidStartPictureInPicture");
+}
+
+- (void)pictureInPictureControllerWillStopPictureInPicture:(AVPictureInPictureController *)pictureInPictureController {
+  NSLog(@"pictureInPictureControllerWillStopPictureInPicture");
+}
+
+- (void)pictureInPictureControllerDidStopPictureInPicture:(AVPictureInPictureController *)pictureInPictureController {
+  NSLog(@"pictureInPictureControllerDidStopPictureInPicture");
+}
 
 @end

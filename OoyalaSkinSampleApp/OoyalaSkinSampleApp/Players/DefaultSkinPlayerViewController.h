@@ -8,9 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "SampleAppPlayerViewController.h"
+#import <AVKit/AVPictureInPictureController.h>
 
-@interface DefaultSkinPlayerViewController : SampleAppPlayerViewController
-
+@interface DefaultSkinPlayerViewController : SampleAppPlayerViewController<AVPictureInPictureControllerDelegate>
 
 @property (nonatomic, retain) IBOutlet UIView *videoView;
 
