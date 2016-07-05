@@ -23,7 +23,9 @@
 @property NSString *playerDomain;
 @end
 
-@implementation IMACustomConfiguredPlayerViewController
+@implementation IMACustomConfiguredPlayerViewController{
+  AppDelegate *appDel;
+}
 
 - (id)initWithPlayerSelectionOption:(PlayerSelectionOption *)playerSelectionOption {
   self = [super initWithPlayerSelectionOption: playerSelectionOption];
@@ -41,11 +43,11 @@
 - (void)loadView {
   [super loadView];
   [[NSBundle mainBundle] loadNibNamed:self.nib owner:self options:nil];
-    [AppDelegate getInstance].count=0;
 }
 
 - (void)viewDidLoad {
   [super viewDidLoad];
+  appDel = [[UIApplication sharedApplication] delegate];
 
   // Create Ooyala ViewController
   OOOoyalaPlayer *player = [[OOOoyalaPlayer alloc] initWithPcode:self.pcode domain:[[OOPlayerDomain alloc] initWithString:self.playerDomain]];
@@ -82,8 +84,8 @@
   NSLog(@"Notification Received: %@. state: %@. playhead: %f count: %d",
         [notification name],
         [OOOoyalaPlayer playerStateToString:[self.ooyalaPlayerViewController.player state]],
-        [self.ooyalaPlayerViewController.player playheadTime],[AppDelegate getInstance].count);
-    [AppDelegate getInstance].count++;
+        [self.ooyalaPlayerViewController.player playheadTime], appDel.count);
+  appDel.count++;
 }
 
 @end
