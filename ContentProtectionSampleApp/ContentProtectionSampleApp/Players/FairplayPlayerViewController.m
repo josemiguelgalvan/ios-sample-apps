@@ -50,10 +50,10 @@
    * The API Key and Secret should not be saved inside your applciation (even in git!).
    * However, for debugging you can use them to locally generate Ooyala Player Tokens.
    */
-  self.apiKey = @"Fill me in";
-  self.secret = @"Fill me in";
-  self.accountId = @"Fill me in";
-  self.authorizeHost = @"http://player.ooyala.com";
+  self.apiKey = @"";
+  self.secret = @"";
+  self.accountId = @"";
+  self.authorizeHost = @"https://player.ooyala.com";
   [OODebugMode setDebugMode:LogAndAbort];
   ASSERT( [self.apiKey containsString:self.pcode], @"self.pcode must be the long prefix of self.apiKey." );
 
@@ -118,6 +118,8 @@
   NSMutableDictionary* params = [NSMutableDictionary dictionary];
   
   params[@"account_id"] = self.accountId;
+  // Test with and without the 'override_syndication_group' line.
+  params[@"override_syndication_group"] = @"override_all_synd_groups";
   NSString* uri = [NSString stringWithFormat:@"/sas/embed_token/%@/%@", self.pcode, [embedCodes componentsJoinedByString:@","]];
   
   OOEmbeddedSecureURLGenerator* urlGen = [[OOEmbeddedSecureURLGenerator alloc] initWithAPIKey:self.apiKey secret:self.secret];
