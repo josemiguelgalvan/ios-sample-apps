@@ -30,6 +30,17 @@
 @property(nonatomic) NSString *publicDeviceId;
 @end
 
+@interface FairplayPlayerInfo : OODefaultPlayerInfo
+
+@end
+
+@implementation FairplayPlayerInfo
+
+- (NSArray *)supportedFormats {
+  return @[@"fps"];
+}
+@end
+
 @implementation FairplayPlayerViewController
 
 - (id)initWithPlayerSelectionOption:(PlayerSelectionOption *)playerSelectionOption {
@@ -68,6 +79,11 @@
 - (void)viewDidLoad {
   [super viewDidLoad];
 
+  // Reproduce FPS assets only
+  [OOStreamPlayer setDefaultPlayerInfo: [FairplayPlayerInfo new]];
+  // Reproduce any supported asset (default behavior)
+//  [OOStreamPlayer setDefaultPlayerInfo: [OODefaultPlayerInfo new]];
+  
   OOOptions *options = [OOOptions new];
 
   // For this example, we use the OOEmbededSecureURLGenerator to create the signed URL on the client
