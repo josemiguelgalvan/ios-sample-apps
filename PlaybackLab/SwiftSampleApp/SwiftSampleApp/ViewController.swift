@@ -10,20 +10,20 @@ import UIKit
 
 class ViewController: UIViewController {
   required init(coder aDecoder: NSCoder) {
-    formatter = DateFormatter()
+    formatter = NSDateFormatter()
     ooyalaPlayerViewController = OOOoyalaPlayerViewController()
     
-    super.init(coder: aDecoder)!
+    super.init(coder: aDecoder)
   }
   
   @IBOutlet weak var playerView: UIView!
   @IBOutlet var textView: UITextView!
   
   let EMBED_CODE = "Y1ZHB1ZDqfhCPjYYRbCEOz0GR8IsVRm1"
-  let PCODE = "c0cTkxOqALQviQIGAHWY5hP0q9gU"
+  let PCODE = "Z5Mm06XeZlcDlfU_1R9v_L2KwYG6"
   let PLAYERDOMAIN = "http://www.ooyala.com"
   
-  var formatter: DateFormatter
+  var formatter: NSDateFormatter
   var ooyalaPlayerViewController: OOOoyalaPlayerViewController
 
   override func viewDidLoad() {
@@ -32,7 +32,7 @@ class ViewController: UIViewController {
     // Create Ooyala ViewController
     var player: OOOoyalaPlayer = OOOoyalaPlayer(pcode: PCODE, domain: OOPlayerDomain(string: PLAYERDOMAIN))
     ooyalaPlayerViewController = OOOoyalaPlayerViewController(player: player)
-
+    
     // Attach it to current view
     self.addChildViewController(ooyalaPlayerViewController)
     ooyalaPlayerViewController.view.frame = playerView.bounds
@@ -44,45 +44,60 @@ class ViewController: UIViewController {
     textView.text = "LOG:"
     
     // Hide Keyboard by setting the size of keyboard to (0, 0)
-    var keyboardView = UIView(frame: CGRect(x: 0, y: 0, width: 0, height: 0))
+    var keyboardView = UIView(frame: CGRectMake(0, 0, 0, 0))
     textView.inputView = keyboardView
     
     // Setup time format
-    let zone  = TimeZone.autoupdatingCurrent
+    let zone  = NSTimeZone.localTimeZone()
     formatter.timeZone = zone
     formatter.dateFormat = "\nyyyy-MM-dd HH:mm:ss \n"
     
     // Load the video
     ooyalaPlayerViewController.player.setEmbedCode(EMBED_CODE)
-    NotificationCenter.default.addObserver(self, selector: "notificationHandler:", name: nil, object: ooyalaPlayerViewController.player)
+    NSNotificationCenter.defaultCenter().addObserver(self, selector: "notificationHandler:", name: nil, object: ooyalaPlayerViewController.player)
   }
   
-  func onPlayerError(_ notification: Notification){
+  func onPlayerError(notification: NSNotification){
     NSLog("Error: %@", ooyalaPlayerViewController.player.error)
   }
 
-  func notificationHandler(_ notification: Notification) {
+  func notificationHandler(notification: NSNotification) {
     var name = notification.name
-    if name == NSNotification.Name.OOOoyalaPlayerTimeChanged {
+    if name == OOOoyalaPlayerTimeChangedNotification {
       return
     }
-
-    NSLog("Notification Received: %@", name.rawValue)
+    
+    var timer = NSDate()
+    var timeStamp = formatter.stringFromDate(timer)
+    timeStamp = timeStamp.substringToIndex(advance(timeStamp.endIndex, -2))
+    
+    if name == OOOoyalaPlayerErrorNotification {
+      var error = ooyalaPlayerViewController.player.view.description
+      textView.insertText(timeStamp + ", Error: ," + error)
+    } else if name == OOOoyalaPlayerStateChangedNotification {
+      var state = ooyalaPlayerViewController.player.state()
+      var currentState = OOOoyalaPlayer.playerStateToString(state)
+      textView.insertText(timeStamp + ", State: ," + currentState)
+    } else {
+      textView.insertText(timeStamp + ", ," + name)
+    }
+    textView.insertText("\n")
+    textView.scrollRangeToVisible(NSMakeRange(count(textView.text), 0))
   }
   
-  override func viewWillAppear(_ animated: Bool) {
+  override func viewWillAppear(animated: Bool) {
     super.viewWillAppear(animated)
   }
   
-  override func viewDidAppear(_ animated: Bool) {
+  override func viewDidAppear(animated: Bool) {
     super.viewDidAppear(animated)
   }
   
-  override func viewWillDisappear(_ animated: Bool) {
+  override func viewWillDisappear(animated: Bool) {
     super.viewWillDisappear(animated)
   }
   
-  override func viewDidDisappear(_ animated: Bool) {
+  override func viewDidDisappear(animated: Bool) {
     super.viewDidDisappear(animated)
   }
 
