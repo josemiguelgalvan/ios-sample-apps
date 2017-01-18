@@ -27,6 +27,11 @@
 }
 
 - (void)addAllBasicPlayerSelectionOptions {
+  [self insertNewObject: [[PlayerSelectionOption alloc] initWithTitle:@"PBA-5236"
+                                                            embedCode:@"AyaTc0eToJv3GJ9L_PSkgzFYAuP348gU"
+                                                                pcode:@"V4bmQyOqnbswtz9daXLyKFGCO8Zp"
+                                                               domain:@"http://www.ooyala.com"
+                                                       viewController: [BasicSimplePlayerViewController class]]];
   [self insertNewObject: [[PlayerSelectionOption alloc] initWithTitle:@"HLS Video"
                                                             embedCode:@"Y1ZHB1ZDqfhCPjYYRbCEOz0GR8IsVRm1"
                                                                 pcode:@"c0cTkxOqALQviQIGAHWY5hP0q9gU"
