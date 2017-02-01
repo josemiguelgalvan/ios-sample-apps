@@ -16,7 +16,7 @@
 @property (nonatomic) NSMutableArray *options;
 @property (nonatomic) NSMutableArray *optionList;
 @property (nonatomic) NSMutableArray *optionEmbedCodes;
-@property BOOL qaLogEnabled;
+@property (nonatomic) BOOL qaLogEnabled;
 @end
 
 @implementation BasicPlaybackListViewController
