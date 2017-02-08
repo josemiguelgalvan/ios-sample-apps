@@ -44,13 +44,18 @@ NSMutableArray *_sharePlugins;
   [[NSBundle mainBundle] loadNibNamed:self.nib owner:self options:nil];
 }
 
-- (void)viewDidLoad {
-  [super viewDidLoad];
+- (void) destroyAndCreate {
+  if (self.skinController != nil) {
+    [self.skinController removeFromParentViewController];
+    [self.skinController.view removeFromSuperview];
+    self.skinController = nil;
+  }
+
   OOOptions *options = [OOOptions new];
   OOOoyalaPlayer *ooyalaPlayer = [[OOOoyalaPlayer alloc] initWithPcode:self.pcode domain:[[OOPlayerDomain alloc] initWithString:self.playerDomain] options:options];
   OODiscoveryOptions *discoveryOptions = [[OODiscoveryOptions alloc] initWithType:OODiscoveryTypePopular limit:10 timeout:60];
   NSURL *jsCodeLocation = [[NSBundle mainBundle] URLForResource:@"main" withExtension:@"jsbundle"];
-//  NSURL *jsCodeLocation = [NSURL URLWithString:@"http://localhost:8081/index.ios.bundle?platform=ios"];
+  //  NSURL *jsCodeLocation = [NSURL URLWithString:@"http://localhost:8081/index.ios.bundle?platform=ios"];
   NSDictionary *overrideConfigs = @{@"upNextScreen": @{@"timeToShow": @"8"}};
 
   ooyalaPlayer.actionAtEnd = OOOoyalaPlayerActionAtEndPause;  //This is reccomended to make sure the endscreen shows up as expected
@@ -59,12 +64,21 @@ NSMutableArray *_sharePlugins;
   [self addChildViewController:_skinController];
   [_skinController.view setFrame:self.videoView.bounds];
 
-  [[NSNotificationCenter defaultCenter] addObserver: self
-                                           selector:@selector(notificationHandler:)
-                                               name:nil
-                                             object:self.skinController];
-
   [ooyalaPlayer setEmbedCode:self.embedCode];
+}
+
+- (void)viewDidLoad {
+  [super viewDidLoad];
+  for (int i = 0; i < 50; i++){
+    [self performSelector:@selector(destroyAndCreate) withObject:nil afterDelay:2 * i];
+  }
+
+
+//  if (self.skinController != nil) {
+//    [self.skinController removeFromParentViewController];
+//    [self.skinController.view removeFromSuperview];
+//    self.skinController = nil;
+//  }
 }
 
 - (void)didReceiveMemoryWarning {
