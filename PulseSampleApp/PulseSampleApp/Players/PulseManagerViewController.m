@@ -111,8 +111,8 @@
 - (id<OOPulseSession>)pulseManager:(OOPulseManager *)manager
              createSessionForVideo:(OOVideo *)video
                      withPulseHost:(NSString *)pulseHost
-                   contentMetadata:(OOContentMetadata *)contentMetadata
-                   requestSettings:(OORequestSettings *)requestSettings
+                   contentMetadata:(VPContentMetadata *)contentMetadata
+                   requestSettings:(VPRequestSettings *)requestSettings
 {
   // Override the content metadata for the Pulse Ad Session request.
   contentMetadata.category = self.videoItem.category;
