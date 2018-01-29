@@ -29,9 +29,9 @@
 		0B193AF91AC118D500EFFE17 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B193AF81AC118D500EFFE17 /* CoreGraphics.framework */; };
 		0B193AFB1AC118E100EFFE17 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B193AFA1AC118E100EFFE17 /* libxml2.dylib */; };
 		0B193AFD1AC118F400EFFE17 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B193AFC1AC118F400EFFE17 /* libc++.dylib */; };
-		0B50E1D11DDD429B00817DD8 /* OoyalaSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B50E1D01DDD429B00817DD8 /* OoyalaSDK.framework */; };
 		0B50E1D31DDD45D000817DD8 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B50E1D21DDD45D000817DD8 /* JavaScriptCore.framework */; };
 		0B50E1D51DDD45D400817DD8 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B50E1D41DDD45D400817DD8 /* AVKit.framework */; };
+		7A9031B9201F6BF7007E70F2 /* OoyalaSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AC24A95201F6A2500508972 /* OoyalaSDK.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +41,153 @@
 			proxyType = 1;
 			remoteGlobalIDString = 0B193AB41AC109A500EFFE17;
 			remoteInfo = SwiftSampleApp;
+		};
+		7AC24A90201F6A2500508972 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7AC24A5D201F6A2500508972 /* OoyalaSDK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9539C59914845D5C00FA201C;
+			remoteInfo = TestApp;
+		};
+		7AC24A92201F6A2500508972 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7AC24A5D201F6A2500508972 /* OoyalaSDK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 750AD50D1F6C095500326BAA;
+			remoteInfo = TestTVApp;
+		};
+		7AC24A94201F6A2500508972 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7AC24A5D201F6A2500508972 /* OoyalaSDK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0B0D803F1AB7F8D300CDD091;
+			remoteInfo = OoyalaSDK;
+		};
+		7AC24A96201F6A2500508972 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7AC24A5D201F6A2500508972 /* OoyalaSDK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3B0E71A8147B0777006F000B;
+			remoteInfo = OoyalaSDKTests;
+		};
+		7AC24A98201F6A2500508972 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7AC24A5D201F6A2500508972 /* OoyalaSDK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 75F7819E1F98ECB200EE1D5E;
+			remoteInfo = OoyalaVRSDK;
+		};
+		7AC24A9A201F6A2500508972 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7AC24A5D201F6A2500508972 /* OoyalaSDK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 75E1C1861FA0C6D000330550;
+			remoteInfo = OoyalaVRSDKTests;
+		};
+		7AC24A9C201F6A2500508972 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7AC24A5D201F6A2500508972 /* OoyalaSDK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 750F6D681F7C03CE003389CA;
+			remoteInfo = OoyalaGVRSDK;
+		};
+		7AC24A9E201F6A2500508972 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7AC24A5D201F6A2500508972 /* OoyalaSDK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = CAD0F5E71C593C9E00027135;
+			remoteInfo = OoyalaTVSDK;
+		};
+		7AC24AA0201F6A2500508972 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7AC24A5D201F6A2500508972 /* OoyalaSDK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 75F7835D1F9A1E5900EE1D5E;
+			remoteInfo = OoyalaVRTVSDK;
+		};
+		7AC24AA2201F6A2500508972 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7AC24A5D201F6A2500508972 /* OoyalaSDK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 75E1C1771FA0C5FB00330550;
+			remoteInfo = OoyalaVRTVSDKTests;
+		};
+		7AC24AA4201F6A2500508972 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7AC24A5D201F6A2500508972 /* OoyalaSDK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0BE798601ABBAB6500C94ABF;
+			remoteInfo = OoyalaIMASDK;
+		};
+		7AC24AA6201F6A2500508972 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7AC24A5D201F6A2500508972 /* OoyalaSDK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0BE797A11ABBA9B600C94ABF;
+			remoteInfo = OoyalaFreewheelSDK;
+		};
+		7AC24AA8201F6A2500508972 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7AC24A5D201F6A2500508972 /* OoyalaSDK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0B6E8AAC1ABB8C720002A76E;
+			remoteInfo = OoyalaSecurePlayerSDK;
+		};
+		7AC24AAA201F6A2500508972 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7AC24A5D201F6A2500508972 /* OoyalaSDK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9750D1F61C4497B10081EB88;
+			remoteInfo = OoyalaSecurePlayerSDKTests;
+		};
+		7AC24AAC201F6A2500508972 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7AC24A5D201F6A2500508972 /* OoyalaSDK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0BE7991D1ABBADD600C94ABF;
+			remoteInfo = OoyalaNielsenSDK;
+		};
+		7AC24AAE201F6A2500508972 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7AC24A5D201F6A2500508972 /* OoyalaSDK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 97E616931A70588A00FFBC0A;
+			remoteInfo = OoyalaNielsenSDKTests;
+		};
+		7AC24AB0201F6A2500508972 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7AC24A5D201F6A2500508972 /* OoyalaSDK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = CA15C2BB1CDAAAAC00B9EF25;
+			remoteInfo = OoyalaAdobeAnalyticsSDK;
+		};
+		7AC24AB2201F6A2500508972 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7AC24A5D201F6A2500508972 /* OoyalaSDK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FF73D3021ACCBDF400312010;
+			remoteInfo = OoyalaCastSDK;
+		};
+		7AC24AB4201F6A2500508972 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7AC24A5D201F6A2500508972 /* OoyalaSDK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C424B8FF1CABDBA6006DC3CD;
+			remoteInfo = OoyalaPulseIntegration;
+		};
+		7AC24AB6201F6A2500508972 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7AC24A5D201F6A2500508972 /* OoyalaSDK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C464E5391CB7AF030019ABD8;
+			remoteInfo = OoyalaPulseIntegrationTests;
+		};
+		7AC24AB8201F6A2500508972 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7AC24A5D201F6A2500508972 /* OoyalaSDK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0BAC12731D9CAEBC003D6D4B;
+			remoteInfo = OoyalaTVPulseIntegration;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -94,6 +241,7 @@
 		0B50E1D01DDD429B00817DD8 /* OoyalaSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OoyalaSDK.framework; sourceTree = "<group>"; };
 		0B50E1D21DDD45D000817DD8 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		0B50E1D41DDD45D400817DD8 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
+		7AC24A5D201F6A2500508972 /* OoyalaSDK.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = OoyalaSDK.xcodeproj; path = "../../../../ios-sdk/sdk/OoyalaSDK.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +249,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A9031B9201F6BF7007E70F2 /* OoyalaSDK.framework in Frameworks */,
 				0B50E1D51DDD45D400817DD8 /* AVKit.framework in Frameworks */,
 				0B50E1D31DDD45D000817DD8 /* JavaScriptCore.framework in Frameworks */,
 				0B193AFD1AC118F400EFFE17 /* libc++.dylib in Frameworks */,
@@ -113,7 +262,6 @@
 				0B193AEF1AC1189A00EFFE17 /* CoreText.framework in Frameworks */,
 				0B193AED1AC1188B00EFFE17 /* AVFoundation.framework in Frameworks */,
 				0B193AEB1AC1187A00EFFE17 /* Security.framework in Frameworks */,
-				0B50E1D11DDD429B00817DD8 /* OoyalaSDK.framework in Frameworks */,
 				0B193AE91AC1186D00EFFE17 /* SystemConfiguration.framework in Frameworks */,
 				0B193AE41AC1184500EFFE17 /* MediaAccessibility.framework in Frameworks */,
 				0B193AE51AC1184500EFFE17 /* MediaPlayer.framework in Frameworks */,
@@ -157,6 +305,7 @@
 		0B193AB71AC109A500EFFE17 /* SwiftSampleApp */ = {
 			isa = PBXGroup;
 			children = (
+				7AC24A5D201F6A2500508972 /* OoyalaSDK.xcodeproj */,
 				0B193ABA1AC109A500EFFE17 /* AppDelegate.swift */,
 				0B193ABC1AC109A500EFFE17 /* BaseViewController.swift */,
 				0B193ADC1AC1173C00EFFE17 /* ViewController.swift */,
@@ -262,6 +411,34 @@
 			path = VendorLibraries;
 			sourceTree = "<group>";
 		};
+		7AC24A5E201F6A2500508972 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7AC24A91201F6A2500508972 /* TestApp.app */,
+				7AC24A93201F6A2500508972 /* TestTVApp.app */,
+				7AC24A95201F6A2500508972 /* OoyalaSDK.framework */,
+				7AC24A97201F6A2500508972 /* OoyalaSDKTests.xctest */,
+				7AC24A99201F6A2500508972 /* OoyalaVRSDK.framework */,
+				7AC24A9B201F6A2500508972 /* OoyalaVRSDKTests.xctest */,
+				7AC24A9D201F6A2500508972 /* libOoyalaGVRSDK.a */,
+				7AC24A9F201F6A2500508972 /* OoyalaSDK.framework */,
+				7AC24AA1201F6A2500508972 /* OoyalaVRTVSDK.framework */,
+				7AC24AA3201F6A2500508972 /* OoyalaVRTVSDKTests.xctest */,
+				7AC24AA5201F6A2500508972 /* OoyalaIMASDK.framework */,
+				7AC24AA7201F6A2500508972 /* OoyalaFreewheelSDK.framework */,
+				7AC24AA9201F6A2500508972 /* OoyalaSecurePlayerSDK.framework */,
+				7AC24AAB201F6A2500508972 /* OoyalaSecurePlayerSDKTests.xctest */,
+				7AC24AAD201F6A2500508972 /* OoyalaNielsenSDK.framework */,
+				7AC24AAF201F6A2500508972 /* OoyalaNielsenSDKTests.xctest */,
+				7AC24AB1201F6A2500508972 /* OoyalaAdobeAnalyticsSDK.framework */,
+				7AC24AB3201F6A2500508972 /* OoyalaCastSDK.framework */,
+				7AC24AB5201F6A2500508972 /* OoyalaPulseIntegration.framework */,
+				7AC24AB7201F6A2500508972 /* OoyalaPulseIntegrationTests.xctest */,
+				7AC24AB9201F6A2500508972 /* OoyalaPulseIntegration.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -334,6 +511,12 @@
 			mainGroup = 0B193AAC1AC109A500EFFE17;
 			productRefGroup = 0B193AB61AC109A500EFFE17 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 7AC24A5E201F6A2500508972 /* Products */;
+					ProjectRef = 7AC24A5D201F6A2500508972 /* OoyalaSDK.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				0B193AB41AC109A500EFFE17 /* SwiftSampleApp */,
@@ -341,6 +524,156 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		7AC24A91201F6A2500508972 /* TestApp.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = TestApp.app;
+			remoteRef = 7AC24A90201F6A2500508972 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7AC24A93201F6A2500508972 /* TestTVApp.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = TestTVApp.app;
+			remoteRef = 7AC24A92201F6A2500508972 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7AC24A95201F6A2500508972 /* OoyalaSDK.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = OoyalaSDK.framework;
+			remoteRef = 7AC24A94201F6A2500508972 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7AC24A97201F6A2500508972 /* OoyalaSDKTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = OoyalaSDKTests.xctest;
+			remoteRef = 7AC24A96201F6A2500508972 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7AC24A99201F6A2500508972 /* OoyalaVRSDK.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = OoyalaVRSDK.framework;
+			remoteRef = 7AC24A98201F6A2500508972 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7AC24A9B201F6A2500508972 /* OoyalaVRSDKTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = OoyalaVRSDKTests.xctest;
+			remoteRef = 7AC24A9A201F6A2500508972 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7AC24A9D201F6A2500508972 /* libOoyalaGVRSDK.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libOoyalaGVRSDK.a;
+			remoteRef = 7AC24A9C201F6A2500508972 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7AC24A9F201F6A2500508972 /* OoyalaSDK.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = OoyalaSDK.framework;
+			remoteRef = 7AC24A9E201F6A2500508972 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7AC24AA1201F6A2500508972 /* OoyalaVRTVSDK.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = OoyalaVRTVSDK.framework;
+			remoteRef = 7AC24AA0201F6A2500508972 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7AC24AA3201F6A2500508972 /* OoyalaVRTVSDKTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = OoyalaVRTVSDKTests.xctest;
+			remoteRef = 7AC24AA2201F6A2500508972 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7AC24AA5201F6A2500508972 /* OoyalaIMASDK.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = OoyalaIMASDK.framework;
+			remoteRef = 7AC24AA4201F6A2500508972 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7AC24AA7201F6A2500508972 /* OoyalaFreewheelSDK.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = OoyalaFreewheelSDK.framework;
+			remoteRef = 7AC24AA6201F6A2500508972 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7AC24AA9201F6A2500508972 /* OoyalaSecurePlayerSDK.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = OoyalaSecurePlayerSDK.framework;
+			remoteRef = 7AC24AA8201F6A2500508972 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7AC24AAB201F6A2500508972 /* OoyalaSecurePlayerSDKTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = OoyalaSecurePlayerSDKTests.xctest;
+			remoteRef = 7AC24AAA201F6A2500508972 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7AC24AAD201F6A2500508972 /* OoyalaNielsenSDK.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = OoyalaNielsenSDK.framework;
+			remoteRef = 7AC24AAC201F6A2500508972 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7AC24AAF201F6A2500508972 /* OoyalaNielsenSDKTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = OoyalaNielsenSDKTests.xctest;
+			remoteRef = 7AC24AAE201F6A2500508972 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7AC24AB1201F6A2500508972 /* OoyalaAdobeAnalyticsSDK.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = OoyalaAdobeAnalyticsSDK.framework;
+			remoteRef = 7AC24AB0201F6A2500508972 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7AC24AB3201F6A2500508972 /* OoyalaCastSDK.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = OoyalaCastSDK.framework;
+			remoteRef = 7AC24AB2201F6A2500508972 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7AC24AB5201F6A2500508972 /* OoyalaPulseIntegration.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = OoyalaPulseIntegration.framework;
+			remoteRef = 7AC24AB4201F6A2500508972 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7AC24AB7201F6A2500508972 /* OoyalaPulseIntegrationTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = OoyalaPulseIntegrationTests.xctest;
+			remoteRef = 7AC24AB6201F6A2500508972 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7AC24AB9201F6A2500508972 /* OoyalaPulseIntegration.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = OoyalaPulseIntegration.framework;
+			remoteRef = 7AC24AB8201F6A2500508972 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		0B193AB31AC109A500EFFE17 /* Resources */ = {
