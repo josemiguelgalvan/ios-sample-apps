@@ -17,7 +17,7 @@ This is absolutely **not** intended to be used in production or to outline best 
 
 ## Project Structure
 
-A [OptionDataSource](OoyalaSSAISampleApp/OoyalaSSAISampleApp/Utils/OptionDataSource.swif) shows a list of available videos along with [metadata](OoyalaSSAISampleApp/OoyalaSSAISampleApp/Models/PlayerSelectionOption.swift) about these videos. When a video is selected, it opens in a [PlayerViewController](OoyalaSSAISampleApp/OoyalaSSAISampleApp/Views/PlayerViewController.swift).
+A [AssetListViewController](./OoyalaSSAISampleApp/Views/AssetListViewController.swift) shows a list of available videos along with [metadata](./OoyalaSSAISampleApp/Models/PlayerSelectionOption.swift) about these videos. When a video is selected, it opens in a [PlayerViewController](./OoyalaSSAISampleApp/Views/PlayerViewController.swift).
 
 The PlayerViewController creates an OOOoyalaPlayer and then associates it with an instance of the OOSsaiPlugin class from the OoyalaSSAISDK framework. OOSsaiPlugin will allow ads to be shown for video content that is associated to the asset.
 
@@ -39,7 +39,7 @@ The plugin can override the ad parameters for retrieve the ad set, the object is
 self.ssaiPlugin.setParams(params);
 ```
 
-** AdTech / Videoplaza **
+**Ooyala Pulse**
 ```
 {
 	"videoplaza-ads-manager": {
@@ -66,7 +66,7 @@ self.ssaiPlugin.setParams(params);
 
 * position is a bit field:Bit 0=Pre-roll, bit 1=mid-roll, bit 2=post-roll
 
-** DFP **
+**DFP**
 ```
 {
 	"google-ima-ads-manager": {
