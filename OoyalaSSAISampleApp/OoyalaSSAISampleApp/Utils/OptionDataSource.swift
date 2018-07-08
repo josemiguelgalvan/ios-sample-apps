@@ -13,11 +13,11 @@ class OptionDataSource: NSObject {
     return [
       PlayerSelectionOption(embedCode: "ltZ3l5YjE6lUAvBdflvcDQ-zti8q8Urd",
                             pcode: "RpOWUyOq86gFq-STNqpgzhzIcXHV",
-                            title: "SSAI VOD",
+                            title: "SSAI VOD - Videoplaza",
                             domain: OOPlayerDomain(string: "http://www.ooyala.com")),
       PlayerSelectionOption(embedCode: "lkb2cyZjE6wp94YSGIEjm6Em1yH0P3zT",
                             pcode: "RpOWUyOq86gFq-STNqpgzhzIcXHV",
-                            title: "SSAI Live",
+                            title: "SSAI Live - Videoplaza",
                             domain: OOPlayerDomain(string: "http://www.ooyala.com")),
       // if required, add more test cases here
     ]

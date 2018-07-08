@@ -51,9 +51,9 @@
 		B8C750C020F08E4200CC9DB7 /* alice.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B8C750BA20F08E4200CC9DB7 /* alice.ttf */; };
 		B8C750C120F08E4200CC9DB7 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B8C750BB20F08E4200CC9DB7 /* Roboto-Regular.ttf */; };
 		B8C750C220F08E4200CC9DB7 /* RobotoCondensed-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B8C750BC20F08E4200CC9DB7 /* RobotoCondensed-Bold.ttf */; };
+		B8C786F620F1D24A00F9D4B0 /* OoyalaSSAISDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8C786F520F1D24A00F9D4B0 /* OoyalaSSAISDK.framework */; };
 		B8DACF7520F1929300AB400D /* OoyalaSkinSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8DACF7420F1929300AB400D /* OoyalaSkinSDK.framework */; };
 		B8DACF7720F1929E00AB400D /* OoyalaSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8DACF7620F1929E00AB400D /* OoyalaSDK.framework */; };
-		B8DACFE320F1A30B00AB400D /* OoyalaSSAISDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8DACFE220F1A30B00AB400D /* OoyalaSSAISDK.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -105,9 +105,9 @@
 		B8C750BA20F08E4200CC9DB7 /* alice.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = alice.ttf; path = "../../../../../vendor/Ooyala/OoyalaSkinSDK-iOS/Fonts/alice.ttf"; sourceTree = "<group>"; };
 		B8C750BB20F08E4200CC9DB7 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Regular.ttf"; path = "../../../../../vendor/Ooyala/OoyalaSkinSDK-iOS/Fonts/Roboto-Regular.ttf"; sourceTree = "<group>"; };
 		B8C750BC20F08E4200CC9DB7 /* RobotoCondensed-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "RobotoCondensed-Bold.ttf"; path = "../../../../../vendor/Ooyala/OoyalaSkinSDK-iOS/Fonts/RobotoCondensed-Bold.ttf"; sourceTree = "<group>"; };
+		B8C786F520F1D24A00F9D4B0 /* OoyalaSSAISDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OoyalaSSAISDK.framework; path = "VendorLibraries/OoyalaSSAISDK-iOS/OoyalaSSAISDK.framework"; sourceTree = "<group>"; };
 		B8DACF7420F1929300AB400D /* OoyalaSkinSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OoyalaSkinSDK.framework; path = "../vendor/Ooyala/OoyalaSkinSDK-iOS/OoyalaSkinSDK.framework"; sourceTree = "<group>"; };
 		B8DACF7620F1929E00AB400D /* OoyalaSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OoyalaSDK.framework; path = "VendorLibraries/OoyalaSDK-iOS/OoyalaSDK.framework"; sourceTree = "<group>"; };
-		B8DACFE220F1A30B00AB400D /* OoyalaSSAISDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OoyalaSSAISDK.framework; path = "VendorLibraries/OoyalaSSAISDK-iOS/OoyalaSSAISDK.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,7 +115,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B8DACFE320F1A30B00AB400D /* OoyalaSSAISDK.framework in Frameworks */,
+				B8C786F620F1D24A00F9D4B0 /* OoyalaSSAISDK.framework in Frameworks */,
 				B8DACF7720F1929E00AB400D /* OoyalaSDK.framework in Frameworks */,
 				B8DACF7520F1929300AB400D /* OoyalaSkinSDK.framework in Frameworks */,
 				B8C7507820EFE77700CC9DB7 /* AVKit.framework in Frameworks */,
@@ -187,7 +187,7 @@
 		B8C7505C20EFE5D000CC9DB7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B8DACFE220F1A30B00AB400D /* OoyalaSSAISDK.framework */,
+				B8C786F520F1D24A00F9D4B0 /* OoyalaSSAISDK.framework */,
 				B8DACF7620F1929E00AB400D /* OoyalaSDK.framework */,
 				B8DACF7420F1929300AB400D /* OoyalaSkinSDK.framework */,
 				B8C7506C20EFE77600CC9DB7 /* AdSupport.framework */,
