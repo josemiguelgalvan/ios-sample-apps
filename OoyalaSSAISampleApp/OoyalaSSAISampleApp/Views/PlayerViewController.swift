@@ -9,6 +9,8 @@ import UIKit
 
 class PlayerViewController: UIViewController {
   
+  private var alertController: UIAlertController?
+  
   @IBOutlet weak var playerView: UIView!
   
   @IBOutlet weak var btnSetPlayerParams: MyButton!
@@ -102,21 +104,11 @@ class PlayerViewController: UIViewController {
   // MARK: - QA Log
   @objc
   private func notificationHandler(notification: NSNotification) {
-    //"Notification Received: \(notification.name.rawValue). state: \(OOOoyalaPlayer.playerState(toString: player.state())!). playhead: \(player.playheadTime())"
-    var message = ""
-    
     if ( notification.name == NSNotification.Name.OOOoyalaPlayerTimeChanged ){
       return;
     }
-    
-    message = "Notification Received: \(notification.name.rawValue). state: \(OOOoyalaPlayer.playerState(toString: player.state())!). playhead: \(String(format: "%.2f", player.playheadTime()))"
-    
-    if (message.isEmpty) {
-      return;
-    }
-    
+    let message = "Notification Received: \(notification.name.rawValue). state: \(OOOoyalaPlayer.playerState(toString: player.state())!). playhead: \(String(format: "%.2f", player.playheadTime()))"
     txtViewLog.text  = "\(message)\n\(txtViewLog.text!)"
-    
   }
   
   // MARK: - SSAI Plugin
@@ -125,6 +117,15 @@ class PlayerViewController: UIViewController {
     let params = txtViewPlayerParams.text
     if ( ssaiPlugin.setParams(params) && ssaiPlugin.player().state != .playing ){
       player.setEmbedCode(option.embedCode)
+    }
+    else {
+      if ssaiPlugin.player().state == .playing {
+        showAlertMsg(title: "OoyalaSSAISampleApp", message: "Player Params cannot be set while AD is playing.", time: 1)
+      }
+      else {
+        showAlertMsg(title: "OoyalaSSAISampleApp", message: "The format of the player params is not a valid json.", time: 1)
+      }
+      
     }
   }
   
@@ -143,6 +144,18 @@ class PlayerViewController: UIViewController {
       txtViewPlayerParams.isHidden = true
       txtViewLog.isHidden = true
     }
+  }
+  
+  private func showAlertMsg(title: String, message: String, time: Int) {
+    guard (alertController == nil) else {
+      return
+    }
+    alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
+    let cancelAction = UIAlertAction(title: "Cancel", style: .cancel) { (action) in
+      self.alertController = nil;
+    }
+    alertController!.addAction(cancelAction)
+    present(alertController!, animated: true, completion: nil)
   }
   
   // MARK: - Denit
