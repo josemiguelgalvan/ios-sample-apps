@@ -30,19 +30,19 @@
 
 /**
  Register the player to the plugin.
- @param[in] player the parameters for the player
+ @param[in] player the player to register
  */
 -(void)registerPlayer:(OOOoyalaPlayer *)player;
 
 /**
  Deregister the player to the plugin.
- @param[in] player the parameters for the player
+ @param[in] player the player to deregister
  */
 -(void)deregisterPlayer:(OOOoyalaPlayer *)player;
 
 /**
  Set the SSAI params
- @param[in] ssaiParams the parameters for SSAI
+ @param[in] ssaiParams the parameters for override SSAI parameters
  @returns YES if the parameters are correct, otherwise NO
  */
 -(BOOL)setParams:(NSString *)ssaiParams;
