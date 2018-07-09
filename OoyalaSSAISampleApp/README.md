@@ -17,7 +17,7 @@ This is absolutely **not** intended to be used in production or to outline best 
 
 ## Project Structure
 
-A [AssetListViewController](./OoyalaSSAISampleApp/Views/AssetListViewController.swift) shows a list of available videos along with [metadata](./OoyalaSSAISampleApp/Models/PlayerSelectionOption.swift) about these videos. When a video is selected, it opens in a [PlayerViewController](./OoyalaSSAISampleApp/Views/PlayerViewController.swift).
+An [AssetListViewController](./OoyalaSSAISampleApp/Views/AssetListViewController.swift) shows a list of available videos along with [metadata](./OoyalaSSAISampleApp/Models/PlayerSelectionOption.swift) about these videos. When a video is selected, it opens in a [PlayerViewController](./OoyalaSSAISampleApp/Views/PlayerViewController.swift).
 
 The PlayerViewController creates an OOOoyalaPlayer and then associates it with an instance of the OOSsaiPlugin class from the OoyalaSSAISDK framework. OOSsaiPlugin will allow ads to be shown for video content that is associated to the asset.
 
@@ -99,7 +99,7 @@ self.ssaiPlugin.setParams(params);
 | tag_url                                | tag_url                |
 | position_type                          | position_type *        |
 
-* For ssai, only position_type ‘t’ is supported.
+* For SSAI, only position_type **‘t’** is supported.
 
 
 ## Useful information

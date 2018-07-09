@@ -120,10 +120,14 @@ class PlayerViewController: UIViewController {
     }
     else {
       if ssaiPlugin.player().state == .playing {
-        showAlertMsg(title: "OoyalaSSAISampleApp", message: "Player Params cannot be set while AD is playing.", time: 1)
+        showAlertMsg(title: "OoyalaSSAISampleApp",
+                     message: "Player Params cannot be set while AD is playing.",
+                     time: 1)
       }
       else {
-        showAlertMsg(title: "OoyalaSSAISampleApp", message: "The format of the player params is not a valid json.", time: 1)
+        showAlertMsg(title: "OoyalaSSAISampleApp",
+                     message: "The format of the player params is not a valid json.",
+                     time: 1)
       }
       
     }
@@ -150,8 +154,11 @@ class PlayerViewController: UIViewController {
     guard (alertController == nil) else {
       return
     }
-    alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
-    let cancelAction = UIAlertAction(title: "Cancel", style: .cancel) { (action) in
+    alertController = UIAlertController(title: title,
+                                        message: message,
+                                        preferredStyle: .alert)
+    let cancelAction = UIAlertAction(title: "Cancel",
+                                     style: .cancel) { (action) in
       self.alertController = nil;
     }
     alertController!.addAction(cancelAction)
