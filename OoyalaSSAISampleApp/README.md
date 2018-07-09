@@ -22,21 +22,22 @@ An [AssetListViewController](./OoyalaSSAISampleApp/Views/AssetListViewController
 The PlayerViewController creates an OOOoyalaPlayer and then associates it with an instance of the OOSsaiPlugin class from the OoyalaSSAISDK framework. OOSsaiPlugin will allow ads to be shown for video content that is associated to the asset.
 
 ```
-self.ssaiPlugin = OOSsaiPlugin();
-self.ssaiPlugin = OOSsaiPlugin(params: ssaiParams);
+let ssaiPlugin: OOSsaiPlugin
+ssaiPlugin = OOSsaiPlugin(); // Without player params
+ssaiPlugin = OOSsaiPlugin(params: ssaiParams); // With player params
 ```
 
 The OOOoyalaPlayer object needs to be registered to the plugin, so the plugin can start make impressions and shows the ad mode when an ad is coming. The OOOoyalaPlayer object can be deregistered to stop make impressions.
 
 ```
-self.ssaiPlugin.register(player);
-self.ssaiPlugin.deregister(player);
+ssaiPlugin.register(player);
+ssaiPlugin.deregister(player);
 ```
 
 The plugin can override the ad parameters for retrieve the ad set, the object is a valid json string depending the ad provider.
 
 ```
-self.ssaiPlugin.setParams(params);
+ssaiPlugin.setParams(params);
 ```
 
 **Ooyala Pulse**
